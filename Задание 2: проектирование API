@@ -1,0 +1,43 @@
+Описание:
+Интернет-магазин "Петрушка Зеленая" преуспевает, расширяется и в мобильном приложении решили создать новый экран, который будет отображать магазины партнеров.
+
+
+Что нужно сделать:
+Написать пример REST API запроса, который будет вызываться при переходе пользователя на данный экран. 
+Привести пример ответа этого REST API в соответствии с макетом. Формат - JSON. Учесть, что при клике на плашку магазина должен осуществляться переход по ссылке на внешний ресурс. 
+
+GET /api/ver1/partners/
+
+json
+{
+  "stores": [
+    {
+      "id": 1,
+      "name": "METRO",
+      "logo": "https://cdn.petrushka.ru/logos/metro.png",
+      "delivery": "Ближайшая доставка в 14:00",
+      "link": "https://online.metro-cc.ru"
+    },
+    {
+      "id": 2,
+      "name": "Ашан",
+      "logo": "https://cdn.petrushka.ru/logos/auchan.png",
+      "delivery": "Самые быстрые",
+      "link": "https://www.auchan.ru"
+    },
+    {
+      "id": 3,
+      "name": "ВкусВилл",
+      "logo": "https://cdn.petrushka.ru/logos/vkusvill.png",
+      "delivery": "Доставка от 20 до 60 минут",
+      "link": "https://vkusvill.ru"
+    },
+    {
+      "id": 4,
+      "name": "ВИКТОРИЯ",
+      "logo": "https://cdn.petrushka.ru/logos/victoria.png",
+      "delivery": "Ближайшая доставка сегодня в 17:00",
+      "link": "https://victoria-group.ru"
+    }
+  ]
+}
